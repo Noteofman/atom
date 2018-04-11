@@ -1,0 +1,129 @@
+"*":
+  "atom-ide-ui":
+    use: {}
+  core:
+    audioBeep: false
+    closeEmptyWindows: false
+    customFileTypes:
+      "source.ini": [
+        ".buckconfig"
+        ".flowconfig"
+        ".hgrc"
+      ]
+      "source.json": [
+        ".arcconfig"
+        "BUCK.autodeps"
+      ]
+      "source.python": [
+        "BUCK"
+      ]
+    disabledPackages: [
+      "autoflow"
+      "wrap-guide"
+      "language-coffee-script"
+      "welcome"
+      "linter"
+    ]
+    excludeVcsIgnoredPaths: false
+    telemetryConsent: "limited"
+  editor:
+    fontFamily: "Fira Code"
+    fontSize: 12
+    invisibles:
+      cr: " "
+      eol: " "
+    showInvisibles: true
+    tabLength: 4
+    tabType: "soft"
+  "exception-reporting":
+    userId: "e4eaa833-d328-4e96-a7b0-afeb209a3b87"
+  "linter-eslint":
+    disableFSCache: true
+    fixOnSave: true
+  "linter-flow":
+    executablePath: "./node_modules/.bin/flow"
+  "linter-phpcs":
+    codeStandardOrConfigFile: "PEAR"
+    executablePath: "/home/daniel/.config/composer/vendor/bin/phpcs"
+  "linter-ui-default":
+    panelHeight: 342
+  nuclide:
+    "nuclide-file-tree":
+      revealFileOnSwitch: true
+      showUncommittedChanges: false
+    "nuclide-flow":
+      canUseFlowBin: true
+      warnOnNotInstalled: false
+    "nuclide-home":
+      showHome: false
+    use:
+      "atom-ide-outline-view": false
+      "nuclide-file-tree": false
+      "nuclide-hack": false
+      "nuclide-hhvm": false
+  "save-workspace-Workspaces":
+    BookProject:
+      panes: [
+        {
+          type: "pane"
+          data:
+            tabs: [
+              "/Users/jaketaylor/Development/laravel/bookproject/.gitignore"
+            ]
+        }
+      ]
+      projectPaths: [
+        "/Users/jaketaylor/Development/laravel/bookproject"
+      ]
+    Flippie:
+      panes: [
+        {
+          type: "pane"
+          data:
+            tabs: []
+        }
+      ]
+      projectPaths: [
+        "/Users/jaketaylor/Development/laravel/flippie"
+      ]
+    HTMLHint:
+      panes: [
+        {
+          type: "pane"
+          data:
+            tabs: []
+        }
+      ]
+      projectPaths: [
+        "/Users/jaketaylor/Development/other/htmlhint"
+      ]
+    TellTrail:
+      panes: [
+        {
+          tabs: [
+            "atom://config"
+          ]
+        }
+      ]
+      projectPaths: [
+        "/Users/jaketaylor/Development/ReactNative/TellTrail"
+      ]
+    TellTrail2:
+      panes: [
+        {
+          type: "pane"
+          data:
+            tabs: [
+              "/Users/jaketaylor/Development/ReactNative/TellTrail2/App/Scenes/Main/Create/Images/Existing/Album.js"
+              "/Users/jaketaylor/Development/ReactNative/TellTrail2/ios/Podfile"
+            ]
+        }
+      ]
+      projectPaths: [
+        "/Users/jaketaylor/Development/ReactNative/TellTrail2"
+      ]
+  "tree-view": {}
+".blade.html.php.text":
+  editor:
+    commentEnd: " --}}"
+    commentStart: "{{-- "
