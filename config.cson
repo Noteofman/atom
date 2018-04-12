@@ -23,6 +23,7 @@
       "language-coffee-script"
       "welcome"
       "linter"
+      "language-babel"
     ]
     excludeVcsIgnoredPaths: false
     telemetryConsent: "limited"
@@ -122,6 +123,8 @@
       projectPaths: [
         "/Users/jaketaylor/Development/ReactNative/TellTrail2"
       ]
+  "tool-bar":
+    position: "Left"
   "tree-view": {}
 ".blade.html.php.text":
   editor:
