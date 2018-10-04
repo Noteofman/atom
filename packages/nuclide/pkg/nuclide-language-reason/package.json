@@ -1,0 +1,9 @@
+{
+  "name": "nuclide-language-reason",
+  "version": "0.0.0",
+  "description": "Reason language support in Atom",
+  "author": "NEEDS OWNER",
+  "nuclide": {
+    "packageType": "AtomPackage"
+  }
+}

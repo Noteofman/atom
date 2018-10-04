@@ -1,0 +1,22 @@
+{
+  "name": "nuclide-diagnostics-extras",
+  "main": "./lib/main.js",
+  "version": "0.0.0",
+  "description": "nuclide-home provider for Diagnostics.",
+  "author": "NEEDS OWNER",
+  "nuclide": {
+    "packageType": "AtomPackage"
+  },
+  "activationCommands": {
+    "atom-workspace": [
+      "nuclide-home:toggle"
+    ]
+  },
+  "providedServices": {
+    "nuclide-home.homeFragments": {
+      "versions": {
+        "0.0.0": "getHomeFragments"
+      }
+    }
+  }
+}

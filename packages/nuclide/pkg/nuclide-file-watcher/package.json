@@ -1,0 +1,10 @@
+{
+  "name": "nuclide-file-watcher",
+  "main": "./lib/main.js",
+  "version": "0.0.0",
+  "description": "Watch for editor conflicts and prompt to reload, ignore or compare",
+  "author": "NEEDS OWNER",
+  "nuclide": {
+    "packageType": "AtomPackage"
+  }
+}

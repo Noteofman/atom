@@ -1,0 +1,9 @@
+'.source.ocaml':
+  'editor':
+    'commentStart': '(* '
+    'commentEnd': ' *)'
+
+'.source.ocamllex':
+  'editor':
+    'commentStart': '(* '
+    'commentEnd': ' *)'

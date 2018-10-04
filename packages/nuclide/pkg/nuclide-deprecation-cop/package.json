@@ -1,0 +1,11 @@
+{
+  "name": "nuclide-deprecation-cop",
+  "main": "./lib/main.js",
+  "version": "0.0.0",
+  "description": "A package to help migrate user keybindings and stylesheets.",
+  "author": "NEEDS OWNER",
+  "nuclide": {
+    "packageType": "AtomPackage"
+  },
+  "activationCommands": {}
+}

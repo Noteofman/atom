@@ -1,0 +1,138 @@
+'name': 'Menhir'
+'fileTypes': ['mly']
+'scopeName': 'source.menhir'
+'patterns': [
+  {'include': '#comment'}
+  {
+    'begin': '(?=%[^%])'
+    'end': '(?=%%)'
+    'patterns': [
+      {'include': '#comment'}
+      {'include': '#declaration'}
+    ]
+  }
+  {
+    'begin': '%%'
+    'beginCaptures':
+      '0': {'name': 'keyword.other.menhir'}
+    'end': '%%'
+    'endCaptures':
+      '0': {'name': 'keyword.other.menhir'}
+    'patterns': [
+      {'include': '#comment'}
+      {'include': '#rule'}
+    ]
+  }
+  {'include': 'source.ocaml'}
+]
+'repository':
+  'declaration':
+    'patterns': [
+      {
+        'begin': '%{'
+        'beginCaptures':
+          '0': {'name': 'keyword.other.menhir'}
+        'end': '%}'
+        'endCaptures':
+          '0': {'name': 'keyword.other.menhir'}
+        'patterns': [{'include': 'source.ocaml'}]
+      }
+      {
+        'match': '(%parameter|%start|%type|%token|%nonassoc|%left|%right|%on_error_reduce)\\b'
+        'name': 'keyword.other.menhir'
+      }
+      {
+        'begin': '(<)\\s*([a-zA-Z][a-zA-Z0-9_]*)\\s*(:)'
+        'beginCaptures':
+          '1': {'name': 'keyword.other.menhir'}
+          '2': {'name': 'variable.parameter.module.menhir'}
+          '3': {'name': 'keyword.other.menhir'}
+        'end': '(>)'
+        'endCaptures':
+          '1': {'name': 'keyword.other.menhir'}
+        'patterns': [{'include': 'source.ocaml'}]
+      }
+      {
+        'begin': '(<)'
+        'beginCaptures':
+          '1': {'name': 'keyword.other.menhir'}
+        'end': '(>)'
+        'endCaptures':
+          '1': {'name': 'keyword.other.menhir'}
+        'patterns': [{'include': 'source.ocaml#typedefs'}]
+      }
+    ]
+  'rule':
+    'patterns': [
+      {
+        'match': '([a-z][a-zA-Z0-9_]*)\\s*(?:\\(([^)]+)\\))?(?=\\s*:)'
+        'captures':
+          '1': {'name': 'entity.name.function.rule.menhir'}
+          '2': {'patterns': [{'include': '#ident'}]}
+      }
+      {
+        'match': '%public|%inline|%prec'
+        'name': 'keyword.other.directive.menhir'
+      }
+      {
+        'begin': '(:|\\|)'
+        'beginCaptures':
+          '1': {'name': 'keyword.other.menhir'}
+        'end': '(?={)'
+        'patterns': [
+          {'include': '#comment'}
+          {'include': '#variable'}
+          {'include': '#reference'}
+          {'include': '#operator'}
+        ]
+      }
+      {
+        'begin': '({)'
+        'beginCaptures':
+          '1': {'name': 'keyword.other.menhir'}
+        'end': '(})'
+        'endCaptures':
+          '1': {'name': 'keyword.other.menhir'}
+        'patterns': [{'include': 'source.ocaml'}]
+      }
+    ]
+  'comment':
+    'patterns': [
+      {
+        'begin': '/\\*'
+        'end': '\\*/'
+        'name': 'comment.block.menhir'
+      }
+      {
+        'begin': '\\(\\*'
+        'end': '\\*\\)'
+        'name': 'comment.block.other.menhir'
+      }
+    ]
+  'variable':
+    'match': '([a-z][a-zA-Z0-9_]*)\\s*='
+    'captures':
+      '1':
+        'name': 'variable.parameter.value.menhir'
+    'patterns': [{'include': '#reference'}]
+  'reference':
+    'patterns': [
+      {
+        'match': '\\b(?:[ibl]?option|pair|separated_pair|preceded|terminated|delimited|list|nonempty_list|separated_list|separated_nonempty_list)\\b',
+        'name': 'support.function.rule.menhir'
+      }
+      {'include': '#uident'}
+      {'include': '#lident'}
+    ]
+  'operator':
+    'match': '[+*?|]'
+    'name': 'keyword.operator.menhir'
+  'uident':
+    'match': '[A-Z][a-zA-Z0-9_]*'
+    'name': 'entity.name.token.menhir'
+  'lident':
+    'match': '[a-z][a-zA-Z0-9_]*'
+    'name': 'entity.name.function.rule.menhir'
+  'ident':
+    'match': '[a-zA-Z][a-zA-Z0-9_]*'
+    'name': 'variable.parameter.rule.menhir'

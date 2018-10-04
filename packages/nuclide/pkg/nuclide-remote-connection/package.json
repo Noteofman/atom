@@ -1,0 +1,10 @@
+{
+  "name": "nuclide-remote-connection",
+  "main": "./lib/main.js",
+  "version": "0.0.0",
+  "description": "Remote connections and monitoring",
+  "author": "Nuclide : Remote",
+  "nuclide": {
+    "packageType": "AtomLibrary"
+  }
+}

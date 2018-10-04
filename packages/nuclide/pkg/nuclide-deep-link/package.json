@@ -1,0 +1,17 @@
+{
+  "name": "nuclide-deep-link",
+  "main": "./lib/main.js",
+  "version": "0.0.0",
+  "description": "A single entrypoint for deep-linking into Nuclide application state.",
+  "author": "NEEDS OWNER",
+  "nuclide": {
+    "packageType": "AtomPackage"
+  },
+  "providedServices": {
+    "nuclide-deep-link.provider": {
+      "versions": {
+        "0.0.0": "provideDeepLinkService"
+      }
+    }
+  }
+}

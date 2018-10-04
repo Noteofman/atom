@@ -10,6 +10,10 @@
         ".flowconfig"
         ".hgrc"
       ]
+      "source.js.jsx": [
+        "ts"
+        "tsx"
+      ]
       "source.json": [
         ".arcconfig"
         "BUCK.autodeps"
@@ -22,10 +26,23 @@
       "wrap-guide"
       "language-coffee-script"
       "welcome"
+      "image-view"
+      "ide-typescript"
+      "Hydrogen"
+      "busy-signal"
+      "pigments"
+      "set-syntax"
+      "language-typescript"
+      "tree-view"
+      "atom-ide-ui"
       "linter"
-      "language-babel"
+      "atom-typescript"
+      "react"
     ]
     excludeVcsIgnoredPaths: false
+    packagesWithKeymapsDisabled: [
+      "atom-typescript"
+    ]
     telemetryConsent: "limited"
   editor:
     fontFamily: "Fira Code"
@@ -38,9 +55,17 @@
     tabType: "soft"
   "exception-reporting":
     userId: "e4eaa833-d328-4e96-a7b0-afeb209a3b87"
+  "js-hyperclick":
+    extensions: [
+      ".js"
+      ".json"
+      ".node"
+      ".ts"
+      ".tsx"
+    ]
+  "language-babel": {}
   "linter-eslint":
     disableFSCache: true
-    fixOnSave: true
   "linter-flow":
     executablePath: "./node_modules/.bin/flow"
   "linter-phpcs":
@@ -49,6 +74,8 @@
   "linter-ui-default":
     panelHeight: 342
   nuclide:
+    hyperclick:
+      darwinTriggerKeys: "ctrlKey"
     "nuclide-file-tree":
       revealFileOnSwitch: true
       showUncommittedChanges: false
@@ -58,19 +85,16 @@
     "nuclide-home":
       showHome: false
     use:
-      "atom-ide-outline-view": false
-      "nuclide-file-tree": false
-      "nuclide-hack": false
-      "nuclide-hhvm": false
+      "nuclide-working-sets": "never"
   "save-workspace-Workspaces":
     BookProject:
       panes: [
         {
-          type: "pane"
           data:
             tabs: [
               "/Users/jaketaylor/Development/laravel/bookproject/.gitignore"
             ]
+          type: "pane"
         }
       ]
       projectPaths: [
@@ -79,9 +103,9 @@
     Flippie:
       panes: [
         {
-          type: "pane"
           data:
             tabs: []
+          type: "pane"
         }
       ]
       projectPaths: [
@@ -90,9 +114,9 @@
     HTMLHint:
       panes: [
         {
-          type: "pane"
           data:
             tabs: []
+          type: "pane"
         }
       ]
       projectPaths: [
@@ -112,12 +136,12 @@
     TellTrail2:
       panes: [
         {
-          type: "pane"
           data:
             tabs: [
               "/Users/jaketaylor/Development/ReactNative/TellTrail2/App/Scenes/Main/Create/Images/Existing/Album.js"
               "/Users/jaketaylor/Development/ReactNative/TellTrail2/ios/Podfile"
             ]
+          type: "pane"
         }
       ]
       projectPaths: [

@@ -1,0 +1,9 @@
+{
+  "name": "nuclide-language-hack",
+  "version": "0.0.0",
+  "description": "Hack language support in Atom",
+  "author": "NEEDS OWNER",
+  "nuclide": {
+    "packageType": "AtomPackage"
+  }
+}

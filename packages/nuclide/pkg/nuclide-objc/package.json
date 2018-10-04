@@ -1,0 +1,26 @@
+{
+  "name": "nuclide-objc",
+  "main": "./lib/main.js",
+  "version": "0.0.0",
+  "description": "Provides support for Objective-C in Nuclide",
+  "author": "NEEDS OWNER",
+  "nuclide": {
+    "configMetadata": {
+      "pathComponents": [
+        "Language",
+        "Obj-C"
+      ]
+    },
+    "config": {
+      "enableAutomaticSquareBracketInsertion": {
+        "title": "Enable Automatic Square Bracket Insertion",
+        "type": "boolean",
+        "default": true
+      }
+    },
+    "packageType": "AtomPackage"
+  },
+  "activationHooks": [
+    "language-objective-c:grammar-used"
+  ]
+}

@@ -1,0 +1,7 @@
+Fontconfig warning: "/etc/fonts/fonts.conf", line 160: blank doesn't take any effect anymore. please remove it from your fonts.conf
+[18918:18918:0820/121539.657449:ERROR:edid_parser.cc(313)] invalid EDID: human unreadable char in name
+ATTENTION: default value of option force_s3tc_enable overridden by environment.
+Created new window in existing browser session.
+Attempting to call a function in a renderer window that has been closed or released.
+Function provided here: worker.js:61:22
+Remote event names: destroyed, crashed

@@ -1,0 +1,64 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/tmp/d-118612-14979-1rf2qxc.q7wuxzjjor/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/tmp/d-118612-14979-1rf2qxc.q7wuxzjjor/package.tgz",
+        "spec": "/tmp/d-118612-14979-1rf2qxc.q7wuxzjjor/package.tgz",
+        "type": "local"
+      },
+      "/tmp/apm-install-dir-118612-14979-1m847ek.1pvugi7ldi"
+    ]
+  ],
+  "_from": "../d-118612-14979-1rf2qxc.q7wuxzjjor/package.tgz",
+  "_id": "language-haskell@1.17.8",
+  "_inCache": true,
+  "_location": "/language-haskell",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/tmp/d-118612-14979-1rf2qxc.q7wuxzjjor/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/tmp/d-118612-14979-1rf2qxc.q7wuxzjjor/package.tgz",
+    "spec": "/tmp/d-118612-14979-1rf2qxc.q7wuxzjjor/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-118612-14979-1rf2qxc.q7wuxzjjor/package.tgz",
+  "_shasum": "d7f79ae5f17c522930cdc7e1c779c393e4386a48",
+  "_shrinkwrap": null,
+  "_spec": "/tmp/d-118612-14979-1rf2qxc.q7wuxzjjor/package.tgz",
+  "_where": "/tmp/apm-install-dir-118612-14979-1m847ek.1pvugi7ldi",
+  "bugs": {
+    "url": "https://github.com/atom-haskell/language-haskell/issues"
+  },
+  "dependencies": {},
+  "description": "Haskell language support in Atom",
+  "devDependencies": {
+    "atom-grammar-test": "^0.6.4",
+    "clone": "^1.0.2",
+    "coffee-script": "~1.9.0",
+    "season": "^2.0.0",
+    "underscore-plus": "^1.6.6"
+  },
+  "engines": {
+    "atom": ">=1.8.0 <2.0.0"
+  },
+  "homepage": "https://github.com/atom-haskell/language-haskell#readme",
+  "license": "MIT",
+  "name": "language-haskell",
+  "optionalDependencies": {},
+  "readme": "# Haskell support in Atom [![](https://travis-ci.org/atom-haskell/language-haskell.svg?branch=master)](https://travis-ci.org/atom-haskell/language-haskell)\n\nAdds syntax highlighting and snippets to Haskell files in Atom.\n\nGrammars:\n\n* Haskell (\\*.hs)\n* Literate Haskell (\\*.lhs)\n* Cabal (\\*.cabal)\n\n![image](https://cloud.githubusercontent.com/assets/7275622/8120540/f16d7ee6-10a8-11e5-9b9d-223ff05a54c6.png)\n\nBased on [Haskell TextMate bundle](https://github.com/textmate/haskell.tmbundle).\n\n# Usage and configuration\n\nUsage and configuration instructions available at [Atom-Haskell documentation site](https://atom-haskell.github.io/core-packages/language-haskell/)\n\n# Contributing\n\nSee [CONTRIBUTING.md](https://github.com/atom-haskell/language-haskell/blob/master/CONTRIBUTING.md)\n\n# License\n\nCopyright © 2015 Atom-Haskell\n\nContributors (by number of commits):\n\n<!-- BEGIN CONTRIBUTORS LIST -->\n-   Nikolay Yakimov\n-   Jared Roesch\n-   Matthew Griffith\n-   samuela\n-   Wliu\n-   Takenobu Tani\n-   Ross Ogilvie\n-   Rob Rix\n-   Ranjit Jhala\n-   Michael Rawson\n-   mdgriffith\n-   Jesse Cooke\n-   Ian D. Bollinger\n\n<!-- END CONTRIBUTORS LIST -->\n\nSee the [LICENSE.md][LICENSE] for details.\n\n[LICENSE]: https://github.com/atom-haskell/language-haskell/blob/master/LICENSE.md\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atom-haskell/language-haskell.git"
+  },
+  "version": "1.17.8"
+}

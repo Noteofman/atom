@@ -1,0 +1,22 @@
+{
+  "name": "nuclide-blame",
+  "main": "./lib/main.js",
+  "version": "0.0.0",
+  "description": "Combines blame information providers and UI to create a blame feature.",
+  "author": "Nuclide : Source Control",
+  "nuclide": {
+    "packageType": "AtomPackage"
+  },
+  "consumedServices": {
+    "nuclide-blame-provider": {
+      "versions": {
+        "0.0.0": "consumeBlameProvider"
+      }
+    },
+    "nuclide-file-tree.context-menu": {
+      "versions": {
+        "0.1.0": "addItemsToFileTreeContextMenu"
+      }
+    }
+  }
+}

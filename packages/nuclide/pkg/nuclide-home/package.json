@@ -1,0 +1,31 @@
+{
+  "name": "nuclide-home",
+  "main": "./lib/main.js",
+  "version": "0.0.0",
+  "description": "Provides a welcome message and other links for first time users.",
+  "author": "NEEDS OWNER",
+  "nuclide": {
+    "configMetadata": {
+      "pathComponents": [
+        "IDE",
+        "Home"
+      ]
+    },
+    "config": {
+      "showHome": {
+        "title": "Show Home Pane",
+        "type": "boolean",
+        "default": true,
+        "description": "Show the home pane (by default shown on first startup)."
+      }
+    },
+    "packageType": "AtomPackage"
+  },
+  "consumedServices": {
+    "nuclide-home.homeFragments": {
+      "versions": {
+        "0.0.0": "setHomeFragments"
+      }
+    }
+  }
+}

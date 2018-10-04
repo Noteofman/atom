@@ -1,0 +1,61 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/tmp/d-118612-14916-1hijl90.9sy3wvobt9/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/tmp/d-118612-14916-1hijl90.9sy3wvobt9/package.tgz",
+        "spec": "/tmp/d-118612-14916-1hijl90.9sy3wvobt9/package.tgz",
+        "type": "local"
+      },
+      "/tmp/apm-install-dir-118612-14916-1v5ofok.vulw12a9k9"
+    ]
+  ],
+  "_from": "../d-118612-14916-1hijl90.9sy3wvobt9/package.tgz",
+  "_id": "language-ocaml@1.9.5",
+  "_inCache": true,
+  "_location": "/language-ocaml",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/tmp/d-118612-14916-1hijl90.9sy3wvobt9/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/tmp/d-118612-14916-1hijl90.9sy3wvobt9/package.tgz",
+    "spec": "/tmp/d-118612-14916-1hijl90.9sy3wvobt9/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-118612-14916-1hijl90.9sy3wvobt9/package.tgz",
+  "_shasum": "4f62193ec75070543e105d674b2cfb9238833192",
+  "_shrinkwrap": null,
+  "_spec": "/tmp/d-118612-14916-1hijl90.9sy3wvobt9/package.tgz",
+  "_where": "/tmp/apm-install-dir-118612-14916-1v5ofok.vulw12a9k9",
+  "bugs": {
+    "url": "https://github.com/toroidal-code/language-ocaml/issues"
+  },
+  "dependencies": {},
+  "description": "Syntax support for the OCaml language",
+  "devDependencies": {
+    "atom-grammar-test": "^0.6.3"
+  },
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/toroidal-code/language-ocaml#readme",
+  "license": "MIT",
+  "name": "language-ocaml",
+  "optionalDependencies": {},
+  "private": true,
+  "readme": "# OCaml Atom package\n\nAdds syntax highlighting to OCaml files in Atom.\n\nOriginally [converted](https://atom.io/docs/latest/converting-a-text-mate-bundle) from the [OCaml TextMate bundle](https://github.com/textmate/ocaml.tmbundle).\n\nContributions are greatly appreciated.\nPlease fork this repository and open a pull request to add snippets, make grammar tweaks, etc.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toroidal-code/language-ocaml.git"
+  },
+  "version": "1.9.5"
+}

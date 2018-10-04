@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/tmp/d-118312-6254-1ibrxtn.xdnuwka9k9/package.tgz",
+        "raw": "/tmp/d-118612-12664-a0himt.132vivbo6r/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/tmp/d-118312-6254-1ibrxtn.xdnuwka9k9/package.tgz",
-        "spec": "/tmp/d-118312-6254-1ibrxtn.xdnuwka9k9/package.tgz",
+        "rawSpec": "/tmp/d-118612-12664-a0himt.132vivbo6r/package.tgz",
+        "spec": "/tmp/d-118612-12664-a0himt.132vivbo6r/package.tgz",
         "type": "local"
       },
-      "/tmp/apm-install-dir-118312-6254-4rvs1f.hoigt4kj4i"
+      "/tmp/apm-install-dir-118612-12664-5kqny9.sh99uj714i"
     ]
   ],
-  "_from": "../d-118312-6254-1ibrxtn.xdnuwka9k9/package.tgz",
-  "_id": "Hydrogen@2.4.0",
+  "_from": "../d-118612-12664-a0himt.132vivbo6r/package.tgz",
+  "_id": "Hydrogen@2.5.1",
   "_inCache": true,
   "_location": "/Hydrogen",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/tmp/d-118312-6254-1ibrxtn.xdnuwka9k9/package.tgz",
+    "raw": "/tmp/d-118612-12664-a0himt.132vivbo6r/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/tmp/d-118312-6254-1ibrxtn.xdnuwka9k9/package.tgz",
-    "spec": "/tmp/d-118312-6254-1ibrxtn.xdnuwka9k9/package.tgz",
+    "rawSpec": "/tmp/d-118612-12664-a0himt.132vivbo6r/package.tgz",
+    "spec": "/tmp/d-118612-12664-a0himt.132vivbo6r/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-118312-6254-1ibrxtn.xdnuwka9k9/package.tgz",
-  "_shasum": "996d0af56be4bfa9a31f684501d4aa9d10275ea6",
+  "_resolved": "file:../d-118612-12664-a0himt.132vivbo6r/package.tgz",
+  "_shasum": "9a5a49c18e4d5bf976987c5896297c06bf6e047e",
   "_shrinkwrap": null,
-  "_spec": "/tmp/d-118312-6254-1ibrxtn.xdnuwka9k9/package.tgz",
-  "_where": "/tmp/apm-install-dir-118312-6254-4rvs1f.hoigt4kj4i",
+  "_spec": "/tmp/d-118612-12664-a0himt.132vivbo6r/package.tgz",
+  "_where": "/tmp/apm-install-dir-118612-12664-5kqny9.sh99uj714i",
   "activationCommands": {
     "atom-text-editor": [
       "hydrogen:start-local-kernel",
@@ -68,7 +68,7 @@
     "@nteract/commutable": "^3.0.4",
     "@nteract/display-area": "^3.1.7",
     "@nteract/transform-plotly": "^3.1.4",
-    "@nteract/transform-vega": "^3.1.0",
+    "@nteract/transform-vega": "^3.1.1",
     "@nteract/transforms": "^3.1.4",
     "anser": "^1.4.4",
     "atom-select-list": "^0.7.0",
@@ -81,6 +81,7 @@
     "mobx-react": "^5.0.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-hot-loader": "^4.3.3",
     "react-rangeslider": "^2.1.0",
     "spawnteract": "^4.0.0",
     "tildify": "^1.2.0",
@@ -154,5 +155,5 @@
     "precommit": "lint-staged",
     "prettier": "prettier --write 'lib/**/*.js' 'spec/**/*.js'"
   },
-  "version": "2.4.0"
+  "version": "2.5.1"
 }

@@ -1,0 +1,50 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+/**
+ * Copyright (c) 2017-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ *  strict-local
+ * @format
+ */
+class UpCommand {
+  constructor(con, debug) {
+    this.name = 'up';
+    this.helpText = 'Move to the next highest stack frame.';
+    this.detailedHelpText = `
+up
+
+Moves to the next highest (away from the current break location) stack frame.
+Selecting a stack frame tells the debugger to consider the state of the program
+as if execution had stopped in that frame. Other commands which query program state
+will use the selected frame for context; for example:
+
+* The 'list' command, with no specified source file, will use the source file of
+  the selected frame.
+* The 'variables' command will display variables from the scope of the selected
+  frame.
+* The 'print' command will evaluate expression in terms of the variables that are
+  in scope in the selected frame.
+  `;
+    this._console = con;
+    this._debugger = debug;
+  }
+
+  async execute(args) {
+    const activeThread = this._debugger.getActiveThread();
+
+    await this._debugger.setSelectedStackFrame(activeThread, activeThread.selectedStackFrame() + 1);
+  }
+
+}
+
+exports.default = UpCommand;

@@ -1,0 +1,32 @@
+{
+  "name": "nuclide-context-view",
+  "description": "UI for Context View sidebar",
+  "author": "NEEDS OWNER",
+  "main": "./lib/main.js",
+  "version": "0.0.0",
+  "nuclide": {
+    "packageType": "AtomPackage"
+  },
+  "deserializers": {
+    "nuclide.ContextViewPanelState": "deserializeContextViewPanelState"
+  },
+  "consumedServices": {
+    "definitions": {
+      "versions": {
+        "0.1.0": "consumeDefinitionProvider"
+      }
+    }
+  },
+  "providedServices": {
+    "nuclide-home.homeFragments": {
+      "versions": {
+        "0.0.0": "getHomeFragments"
+      }
+    },
+    "nuclide-context-view": {
+      "versions": {
+        "0.0.0": "provideNuclideContextView"
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "nuclide-autocomplete",
+  "version": "0.0.0",
+  "description": "A wrapper on autocomplete-plus to provide timeout and tracking when using autocomplete-plus",
+  "author": "NEEDS OWNER",
+  "main": "./lib/main.js",
+  "nuclide": {
+    "packageType": "AtomPackage"
+  },
+  "consumedServices": {
+    "nuclide-autocomplete.provider": {
+      "versions": {
+        "0.0.0": "consumeProvider"
+      }
+    }
+  }
+}

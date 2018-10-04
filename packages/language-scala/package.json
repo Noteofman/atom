@@ -1,0 +1,58 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/tmp/d-118612-14768-1bchudg.6fmc5zh0k9/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/tmp/d-118612-14768-1bchudg.6fmc5zh0k9/package.tgz",
+        "spec": "/tmp/d-118612-14768-1bchudg.6fmc5zh0k9/package.tgz",
+        "type": "local"
+      },
+      "/tmp/apm-install-dir-118612-14768-15vndqe.wq318m2t9"
+    ]
+  ],
+  "_from": "../d-118612-14768-1bchudg.6fmc5zh0k9/package.tgz",
+  "_id": "language-scala@1.1.9",
+  "_inCache": true,
+  "_location": "/language-scala",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/tmp/d-118612-14768-1bchudg.6fmc5zh0k9/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/tmp/d-118612-14768-1bchudg.6fmc5zh0k9/package.tgz",
+    "spec": "/tmp/d-118612-14768-1bchudg.6fmc5zh0k9/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-118612-14768-1bchudg.6fmc5zh0k9/package.tgz",
+  "_shasum": "a1b06e91d3607c89dfcff8f262a69226e1f28259",
+  "_shrinkwrap": null,
+  "_spec": "/tmp/d-118612-14768-1bchudg.6fmc5zh0k9/package.tgz",
+  "_where": "/tmp/apm-install-dir-118612-14768-15vndqe.wq318m2t9",
+  "bugs": {
+    "url": "https://github.com/jroesch/language-scala/issues"
+  },
+  "dependencies": {},
+  "description": "Scala language support in Atom",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/jroesch/language-scala#readme",
+  "license": "MIT",
+  "name": "language-scala",
+  "optionalDependencies": {},
+  "readme": "# Language support for Scala in Atom\n\n[![apm](https://img.shields.io/apm/v/language-scala.svg?style=flat-square)](https://atom.io/packages/language-scala)\n[![npm](https://img.shields.io/npm/v/language-scala.svg?style=flat-square)](https://www.npmjs.com/package/language-scala)\n\n[Scala grammar](https://atom.io/packages/language-scala) for [Atom](https://atom.io). Originally converted from the [Scala TextMate bundle](https://github.com/mads379/scala.tmbundle). Also available as a [Node package](https://www.npmjs.com/package/language-scala).\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jroesch/language-scala.git"
+  },
+  "version": "1.1.9"
+}

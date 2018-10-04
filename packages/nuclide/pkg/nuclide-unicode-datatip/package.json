@@ -1,0 +1,17 @@
+{
+  "name": "nuclide-unicode-datatip",
+  "main": "./lib/main.js",
+  "version": "0.0.0",
+  "description": "Decodes Unicode escapes on hover-over",
+  "author": "NEEDS OWNER",
+  "nuclide": {
+    "packageType": "AtomPackage"
+  },
+  "consumedServices": {
+    "datatip": {
+      "versions": {
+        "0.1.0": "consumeDatatipService"
+      }
+    }
+  }
+}

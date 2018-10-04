@@ -1,0 +1,10 @@
+{
+  "name": "nuclide-buck-base",
+  "main": "./lib/main.js",
+  "version": "0.0.0",
+  "description": "Provides API to work with Buck",
+  "author": "NEEDS OWNER",
+  "nuclide": {
+    "packageType": "AtomLibrary"
+  }
+}

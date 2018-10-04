@@ -1,0 +1,10 @@
+{
+  "name": "nuclide-react-inspector",
+  "main": "./lib/main.js",
+  "version": "0.0.0",
+  "description": "Use the React element inspector in Nuclide",
+  "author": "NEEDS OWNER",
+  "nuclide": {
+    "packageType": "AtomPackage"
+  }
+}

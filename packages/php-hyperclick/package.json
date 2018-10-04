@@ -1,0 +1,77 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/tmp/d-118612-16424-l0iqb3.97r2j4i/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/tmp/d-118612-16424-l0iqb3.97r2j4i/package.tgz",
+        "spec": "/tmp/d-118612-16424-l0iqb3.97r2j4i/package.tgz",
+        "type": "local"
+      },
+      "/tmp/apm-install-dir-118612-16424-39sqn.ktip6z85mi"
+    ]
+  ],
+  "_from": "../d-118612-16424-l0iqb3.97r2j4i/package.tgz",
+  "_id": "php-hyperclick@1.2.1",
+  "_inCache": true,
+  "_location": "/php-hyperclick",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/tmp/d-118612-16424-l0iqb3.97r2j4i/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/tmp/d-118612-16424-l0iqb3.97r2j4i/package.tgz",
+    "spec": "/tmp/d-118612-16424-l0iqb3.97r2j4i/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-118612-16424-l0iqb3.97r2j4i/package.tgz",
+  "_shasum": "63633bec1de01e49e45a7ed0c79c63ed2a5627a1",
+  "_shrinkwrap": null,
+  "_spec": "/tmp/d-118612-16424-l0iqb3.97r2j4i/package.tgz",
+  "_where": "/tmp/apm-install-dir-118612-16424-39sqn.ktip6z85mi",
+  "author": {
+    "name": "Hari KT"
+  },
+  "bugs": {
+    "url": "https://github.com/harikt/php-hyperclick/issues"
+  },
+  "dependencies": {
+    "hyperclick": ">=0.0.20"
+  },
+  "description": "Hyperclick provider for PHP. Open file when classname is clicked",
+  "devDependencies": {
+    "hyperclick-interfaces": "0.0.0"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/harikt/php-hyperclick#readme",
+  "keywords": [
+    "hyperclick",
+    "php"
+  ],
+  "license": "MIT",
+  "main": "./lib/php-hyperclick-package",
+  "name": "php-hyperclick",
+  "optionalDependencies": {},
+  "providedServices": {
+    "hyperclick.provider": {
+      "versions": {
+        "0.0.0": "getProvider"
+      }
+    }
+  },
+  "readme": "# php-hyperclick package\n\nOpen the class files when you trigger `ctrl` + `mouse left click`.\n\n![How it works!](https://cloud.githubusercontent.com/assets/120454/12533819/51b6cd44-c264-11e5-855c-ecd6437ca43d.gif)\n\n## Inspired by\n\n* [js-hyperclick](https://github.com/AsaAyers/js-hyperclick/)\n* [atom-autocomplete-php](https://github.com/Peekmo/atom-autocomplete-php)\n\nThis works with the help of some dependencies\n\n* [Hyperclick](https://atom.io/packages/hyperclick)\n\nOptional dependency:\n\n* [Composer](https://getcomposer.org) a dependency manager for PHP\n\n## Making composer an optional dependency\n\nEven though the class finding functionality is relied on composer, you can easily\nmake the necessary change to make composer as optional dependency.\n\nThe base working of the package is it tries to find the file `/vendor/autoload.php`\nwhich returns an autoloader object. It assumes the object has a method\n[findFile($class_name)](https://github.com/composer/composer/blob/c540dace8cceca12b1fa969fd9f58dcb7395d402/src/Composer/Autoload/ClassLoader.php#L307-L314).\n\nSo if you are not using composer, keep a `vendor/autoload.php` file on the root\nof your project.\n\n```php\n// vendor/autoload.php\n\n$autoloader = new YourAutoloader();\n\n// Make sure there is findFile method which can return the path to the file when class name is passed\n\nreturn $autoloader;\n```\n\n## Wishes\n\n* Learn coffee script and port\n* Improve all the ugly code\n\n## Known Limitations\n\n* Must have `use` statement in classes. Else clicking on things like `new \\Lib\\Hello\\World()` will not be opened.\n* May not work on windows\n* Other unknown bugs\n\n## Thanks\n\nSpecial Thanks to\n\n* Marco Pivetta\n* Shameer C\n* Wouter J\n* Mark Hahn\n* Lee Dohm\n* Dylan R. E. Moonfire\n* Joel Clermont\n\nand to everyone who have helped knowingly/unknowingly to make this happen.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harikt/php-hyperclick.git"
+  },
+  "version": "1.2.1"
+}

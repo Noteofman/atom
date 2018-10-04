@@ -1,0 +1,17 @@
+{
+  "name": "nuclide-atom-notifications",
+  "main": "./lib/main.js",
+  "version": "0.0.0",
+  "description": "Wire Atom notifications up to the Nuclide console",
+  "author": "Nuclide : Core UI",
+  "nuclide": {
+    "packageType": "AtomPackage"
+  },
+  "consumedServices": {
+    "console": {
+      "versions": {
+        "0.1.0": "consumeConsoleService"
+      }
+    }
+  }
+}

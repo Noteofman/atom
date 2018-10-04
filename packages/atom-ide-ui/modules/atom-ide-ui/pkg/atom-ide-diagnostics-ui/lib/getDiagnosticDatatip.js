@@ -1,87 +1,100 @@
-'use strict';
+"use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.default = void 0;
 
-var _asyncToGenerator = _interopRequireDefault(require('async-to-generator'));
+var React = _interopRequireWildcard(require("react"));
 
-var _react = _interopRequireWildcard(require('react'));
+function _event() {
+  const data = require("../../../../nuclide-commons/event");
 
-var _event;
+  _event = function () {
+    return data;
+  };
 
-function _load_event() {
-  return _event = require('nuclide-commons/event');
+  return data;
 }
 
-var _goToLocation;
+function _goToLocation() {
+  const data = require("../../../../nuclide-commons-atom/go-to-location");
 
-function _load_goToLocation() {
-  return _goToLocation = require('nuclide-commons-atom/go-to-location');
+  _goToLocation = function () {
+    return data;
+  };
+
+  return data;
 }
 
-var _bindObservableAsProps;
+function _bindObservableAsProps() {
+  const data = require("../../../../nuclide-commons-ui/bindObservableAsProps");
 
-function _load_bindObservableAsProps() {
-  return _bindObservableAsProps = require('nuclide-commons-ui/bindObservableAsProps');
+  _bindObservableAsProps = function () {
+    return data;
+  };
+
+  return data;
 }
 
-var _DiagnosticsPopup;
+function _DiagnosticsPopup() {
+  const data = require("./ui/DiagnosticsPopup");
 
-function _load_DiagnosticsPopup() {
-  return _DiagnosticsPopup = require('./ui/DiagnosticsPopup');
+  _DiagnosticsPopup = function () {
+    return data;
+  };
+
+  return data;
 }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-const gotoLine = (file, line) => (0, (_goToLocation || _load_goToLocation()).goToLocation)(file, { line }); /**
-                                                                                                             * Copyright (c) 2017-present, Facebook, Inc.
-                                                                                                             * All rights reserved.
-                                                                                                             *
-                                                                                                             * This source code is licensed under the BSD-style license found in the
-                                                                                                             * LICENSE file in the root directory of this source tree. An additional grant
-                                                                                                             * of patent rights can be found in the PATENTS file in the same directory.
-                                                                                                             *
-                                                                                                             * 
-                                                                                                             * @format
-                                                                                                             */
+/**
+ * Copyright (c) 2017-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ *  strict-local
+ * @format
+ */
+const gotoLine = (file, line) => (0, _goToLocation().goToLocation)(file, {
+  line
+});
 
 function makeDatatipComponent(messages, diagnosticUpdater) {
   const fixer = message => diagnosticUpdater.applyFix(message);
-  return (0, (_bindObservableAsProps || _load_bindObservableAsProps()).bindObservableAsProps)((0, (_event || _load_event()).observableFromSubscribeFunction)(cb => diagnosticUpdater.observeCodeActionsForMessage(cb)).map(codeActionsForMessage => ({
+
+  return (0, _bindObservableAsProps().bindObservableAsProps)((0, _event().observableFromSubscribeFunction)(cb => diagnosticUpdater.observeCodeActionsForMessage(cb)).map(codeActionsForMessage => ({
     messages,
     fixer,
     goToLocation: gotoLine,
     codeActionsForMessage
-  })), (_DiagnosticsPopup || _load_DiagnosticsPopup()).DiagnosticsPopup);
+  })), _DiagnosticsPopup().DiagnosticsPopup);
 }
 
-exports.default = (() => {
-  var _ref = (0, _asyncToGenerator.default)(function* (editor, position, messagesAtPosition, diagnosticUpdater) {
-    let range = null;
-    for (const message of messagesAtPosition) {
-      if (message.range != null) {
-        range = range == null ? message.range : message.range.union(range);
-      }
+var getDiagnosticDatatip = async function getDiagnosticDatatip(editor, position, messagesAtPosition, diagnosticUpdater) {
+  let range = null;
+
+  for (const message of messagesAtPosition) {
+    if (message.range != null) {
+      range = range == null ? message.range : message.range.union(range);
     }
-    diagnosticUpdater.fetchCodeActions(editor, messagesAtPosition);
-
-    if (!(range != null)) {
-      throw new Error('Invariant violation: "range != null"');
-    }
-
-    return {
-      component: makeDatatipComponent(messagesAtPosition, diagnosticUpdater),
-      pinnable: false,
-      range
-    };
-  });
-
-  function getDiagnosticDatatip(_x, _x2, _x3, _x4) {
-    return _ref.apply(this, arguments);
   }
 
-  return getDiagnosticDatatip;
-})();
+  diagnosticUpdater.fetchCodeActions(editor, messagesAtPosition);
+
+  if (!(range != null)) {
+    throw new Error("Invariant violation: \"range != null\"");
+  }
+
+  return {
+    component: makeDatatipComponent(messagesAtPosition, diagnosticUpdater),
+    pinnable: false,
+    range
+  };
+};
+
+exports.default = getDiagnosticDatatip;

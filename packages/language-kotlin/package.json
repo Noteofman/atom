@@ -1,0 +1,59 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/tmp/d-118612-14947-1al28om.hi9zp06bt9/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/tmp/d-118612-14947-1al28om.hi9zp06bt9/package.tgz",
+        "spec": "/tmp/d-118612-14947-1al28om.hi9zp06bt9/package.tgz",
+        "type": "local"
+      },
+      "/tmp/apm-install-dir-118612-14947-1ik5mof.6kz9llerk9"
+    ]
+  ],
+  "_from": "../d-118612-14947-1al28om.hi9zp06bt9/package.tgz",
+  "_id": "language-kotlin@0.5.0",
+  "_inCache": true,
+  "_location": "/language-kotlin",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/tmp/d-118612-14947-1al28om.hi9zp06bt9/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/tmp/d-118612-14947-1al28om.hi9zp06bt9/package.tgz",
+    "spec": "/tmp/d-118612-14947-1al28om.hi9zp06bt9/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-118612-14947-1al28om.hi9zp06bt9/package.tgz",
+  "_shasum": "722b4ef1147c72e004d4712c4c4cfaf439f046ed",
+  "_shrinkwrap": null,
+  "_spec": "/tmp/d-118612-14947-1al28om.hi9zp06bt9/package.tgz",
+  "_where": "/tmp/apm-install-dir-118612-14947-1ik5mof.6kz9llerk9",
+  "bugs": {
+    "url": "https://github.com/alexmt/atom-kotlin-language/issues"
+  },
+  "dependencies": {},
+  "description": "Adds syntax highlighting to Kotlin files in Atom",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/alexmt/atom-kotlin-language#readme",
+  "license": "MIT",
+  "main": "./lib/language-kotlin",
+  "name": "language-kotlin",
+  "optionalDependencies": {},
+  "readme": "# Kotlin language support in Atom\n\nAdds syntax highlighting to Kotlin files in Atom. \n\n![Kotlin Atom Package Screenshoot](https://raw.githubusercontent.com/alexmt/atom-kotlin-language/master/sample.png)\n\nConverted from [Sublime Text package](https://github.com/vkostyukov/kotlin-sublime-package) which has been implemented by [Vladimir Kostyukov](https://github.com/vkostyukov).\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexmt/atom-kotlin-language.git"
+  },
+  "version": "0.5.0"
+}

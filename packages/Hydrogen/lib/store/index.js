@@ -31,13 +31,22 @@ export class Store {
   @observable editor = atom.workspace.getActiveTextEditor();
   @observable grammar: ?atom$Grammar;
   @observable configMapping: Map<string, ?mixed> = new Map();
+  globalMode: boolean = Boolean(atom.config.get("Hydrogen.globalMode"));
 
   @computed
   get kernel(): ?Kernel {
+    if (this.globalMode) {
+      if (!this.grammar) return null;
+      const currentScopeName = this.grammar.scopeName;
+      return this.runningKernels.filter(
+        k => k.grammar.scopeName === currentScopeName
+      )[0];
+    }
+
     if (!this.filePath) return null;
-    const kernel = this.kernelMapping.get(this.filePath);
-    if (!kernel || kernel instanceof Kernel) return kernel;
-    if (this.grammar) return kernel[this.grammar.name];
+    const kernelOrMap = this.kernelMapping.get(this.filePath);
+    if (!kernelOrMap || kernelOrMap instanceof Kernel) return kernelOrMap;
+    if (this.grammar) return kernelOrMap.get(this.grammar.name);
   }
 
   @computed
@@ -139,6 +148,12 @@ export class Store {
   updateEditor(editor: ?atom$TextEditor) {
     this.editor = editor;
     this.setGrammar(editor);
+
+    if (this.globalMode && this.kernel && editor) {
+      const fileName = editor.getPath();
+      if (!fileName) return;
+      this.kernelMapping.set(fileName, this.kernel);
+    }
   }
 
   @action

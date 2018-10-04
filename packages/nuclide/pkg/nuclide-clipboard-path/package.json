@@ -1,0 +1,19 @@
+{
+  "name": "nuclide-clipboard-path",
+  "main": "./lib/main.js",
+  "version": "0.0.0",
+  "description": "Copy remote aware paths to the clipboard.",
+  "author": "NEEDS OWNER",
+  "nuclide": {
+    "packageType": "AtomPackage"
+  },
+  "activationCommands": {
+    "atom-workspace": [
+      "nuclide-clipboard-path:copy-absolute-path",
+      "nuclide-clipboard-path:copy-hostname-of-current-path",
+      "nuclide-clipboard-path:copy-basename-of-current-path",
+      "nuclide-clipboard-path:copy-repository-relative-path",
+      "nuclide-clipboard-path:copy-project-relative-path"
+    ]
+  }
+}

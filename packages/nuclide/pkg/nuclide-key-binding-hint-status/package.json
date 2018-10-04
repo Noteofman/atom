@@ -1,0 +1,18 @@
+{
+  "name": "nuclide-key-binding-hint-status",
+  "main": "./lib/main.js",
+  "version": "0.0.0",
+  "description": "A status line showing a key binding for your last action",
+  "author": "NEEDS OWNER",
+  "nuclide": {
+    "packageType": "AtomPackage"
+  },
+  "activationCommands": {},
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    }
+  }
+}

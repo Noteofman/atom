@@ -1,0 +1,10 @@
+{
+  "name": "nuclide-project",
+  "main": "./lib/main.js",
+  "version": "0.0.0",
+  "description": "Performs sanity checks when mounting projects",
+  "author": "NEEDS OWNER",
+  "nuclide": {
+    "packageType": "AtomPackage"
+  }
+}

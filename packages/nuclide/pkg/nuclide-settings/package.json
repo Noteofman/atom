@@ -1,0 +1,22 @@
+{
+  "name": "nuclide-settings",
+  "main": "./lib/main.js",
+  "version": "0.0.0",
+  "description": "A view of Nuclide Settings organized by features instead of by package.",
+  "author": "NEEDS OWNER",
+  "nuclide": {
+    "packageType": "AtomPackage"
+  },
+  "consumedServices": {
+    "tool-bar": {
+      "versions": {
+        "^1.0.0": "consumeToolBar"
+      }
+    },
+    "nuclide-deep-link.provider": {
+      "versions": {
+        "0.0.0": "consumeDeepLinkService"
+      }
+    }
+  }
+}

@@ -14,7 +14,7 @@
 /* eslint
   comma-dangle: [1, always-multiline],
   prefer-object-spread/prefer-object-spread: 0,
-  rulesdir/no-commonjs: 0,
+  nuclide-internal/no-commonjs: 0,
   */
 /* eslint-disable no-console */
 
@@ -45,7 +45,8 @@ function runParent() {
 
   const developmentFilePath = path.join(__dirname, '../../../DEVELOPMENT');
 
-  const numWorkers = Math.max(os.cpus().length - 1, 1);
+  const cpus = os.cpus();
+  const numWorkers = cpus ? Math.max(cpus.length - 1, 1) : 1;
 
   const count = {
     skipped: 0,
@@ -56,20 +57,32 @@ function runParent() {
   const jsFiles = pathRules.getIncludedFiles(directory);
 
   // Sanity checks
-  assert(jsFiles.length > 0);
   jsFiles.forEach(filename => {
     assert(path.isAbsolute(filename));
   });
 
   console.log('%s workers. %s files...', numWorkers, jsFiles.length);
 
+  const ProgressBar = require('progress');
+  const progressBar = new ProgressBar(
+    'transpiling [:bar] (:current/:total) :etas',
+    {
+      complete: '=',
+      incomplete: ' ',
+      width: 20,
+      total: jsFiles.length,
+    }
+  );
+
   for (let i = 0; i < numWorkers; i++) {
     child_process.fork(__filename)
       .on('message', function(m) {
         if (m.transpiled === true) {
           count.transpiled++;
+          progressBar.tick();
         } else if (m.skipped === true) {
           count.skipped++;
+          progressBar.tick();
         }
         if (jsFiles.length) {
           this.send({cmd: 'next', filename: jsFiles.pop()});

@@ -1,0 +1,13 @@
+{
+  "name": "nuclide-analytics",
+  "main": "./lib/main.js",
+  "version": "0.0.0",
+  "description": "Provides a standard API for packages to send analytics to arbitrary providers.",
+  "author": "NEEDS OWNER",
+  "nuclide": {
+    "packageType": "NodeLibrary"
+  },
+  "scripts": {
+    "test": "node ../nuclide-jasmine/bin/jasmine-node-transpiled spec"
+  }
+}

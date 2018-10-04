@@ -1,0 +1,14 @@
+{
+  "name": "nuclide-buck-rpc",
+  "main": "./lib/BuckService.js",
+  "version": "0.0.0",
+  "description": "Provides API to work with Buck",
+  "author": "NEEDS OWNER",
+  "nuclide": {
+    "packageType": "NodeLibrary",
+    "testsCannotBeRunInParallel": true
+  },
+  "scripts": {
+    "test": "node ../nuclide-jasmine/bin/jasmine-node-transpiled spec"
+  }
+}

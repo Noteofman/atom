@@ -1,0 +1,66 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/tmp/d-118612-15001-jr4giu.7733ihehfr/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/tmp/d-118612-15001-jr4giu.7733ihehfr/package.tgz",
+        "spec": "/tmp/d-118612-15001-jr4giu.7733ihehfr/package.tgz",
+        "type": "local"
+      },
+      "/tmp/apm-install-dir-118612-15001-1nr4vxp.00e0khjjor"
+    ]
+  ],
+  "_from": "../d-118612-15001-jr4giu.7733ihehfr/package.tgz",
+  "_id": "language-ini@1.20.0",
+  "_inCache": true,
+  "_location": "/language-ini",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/tmp/d-118612-15001-jr4giu.7733ihehfr/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/tmp/d-118612-15001-jr4giu.7733ihehfr/package.tgz",
+    "spec": "/tmp/d-118612-15001-jr4giu.7733ihehfr/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-118612-15001-jr4giu.7733ihehfr/package.tgz",
+  "_shasum": "ec9c7f2af63704b90e4c9be42b3dab5ccdbc3b34",
+  "_shrinkwrap": null,
+  "_spec": "/tmp/d-118612-15001-jr4giu.7733ihehfr/package.tgz",
+  "_where": "/tmp/apm-install-dir-118612-15001-1nr4vxp.00e0khjjor",
+  "author": {
+    "name": "Jacob Bednarz",
+    "email": "jacob.bednarz@gmail.com",
+    "url": "https://jacobbednarz.github.io"
+  },
+  "bugs": {
+    "url": "https://github.com/jacobbednarz/atom-language-ini/issues"
+  },
+  "dependencies": {},
+  "description": "Syntax support for ini files.",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/jacobbednarz/atom-language-ini",
+  "license": "MIT",
+  "name": "language-ini",
+  "optionalDependencies": {},
+  "readme": "# Syntax support for INI files in Atom\n\nContributions are welcome and bonus are awarded for pull requests. Please fork and send a pull requests for updates to grammars, snippets or documentation.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacobbednarz/atom-language-ini.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.20.0"
+}

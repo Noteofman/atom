@@ -1,0 +1,13 @@
+{
+  "name": "nuclide-hack-rpc",
+  "main": "./lib/HackService.js",
+  "version": "0.0.0",
+  "description": "Provides API to work with Hack",
+  "author": "NEEDS OWNER",
+  "nuclide": {
+    "packageType": "NodeLibrary"
+  },
+  "scripts": {
+    "test": "node ../nuclide-jasmine/bin/jasmine-node-transpiled spec"
+  }
+}

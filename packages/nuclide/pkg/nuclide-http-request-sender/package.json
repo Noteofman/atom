@@ -1,0 +1,19 @@
+{
+  "name": "nuclide-http-request-sender",
+  "main": "./lib/main.js",
+  "version": "0.0.0",
+  "description": "Configure and send HTTP requests from Nuclide via a dedicated UI.",
+  "author": "NEEDS OWNER",
+  "nuclide": {
+    "packageType": "AtomPackage"
+  },
+  "providedServices": {
+    "nuclide-http-request-sender": {
+      "description": "Register a package to provide http request data.",
+      "versions": {
+        "0.0.0": "provideHttpRequestSender"
+      }
+    }
+  },
+  "activationCommands": {}
+}

@@ -1,0 +1,13 @@
+{
+  "name": "nuclide-logging",
+  "main": "./lib/main.js",
+  "version": "0.0.0",
+  "description": "Provides logging on both Nuclide client and Nuclide server",
+  "author": "NEEDS OWNER",
+  "nuclide": {
+    "packageType": "NodeLibrary"
+  },
+  "scripts": {
+    "test": "node ../nuclide-jasmine/bin/jasmine-node-transpiled spec"
+  }
+}

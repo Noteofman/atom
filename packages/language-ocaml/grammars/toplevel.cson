@@ -1,0 +1,21 @@
+'scopeName': 'text.ocaml.toplevel'
+'name': 'OCaml Toplevel'
+'patterns': [
+  {
+    'begin': '^(#) '
+    'beginCaptures':
+      '1':
+        'name': 'punctuation.separator.prompt.ocaml'
+    'end': '(;;)$'
+    'endCaptures':
+      '1':
+        'name': 'punctuation.terminator.expression.ocaml'
+    'name': 'meta.toplevel.input.ocaml'
+    'patterns': [
+      {
+        'include': 'source.ocaml'
+      }
+    ]
+  }
+]
+

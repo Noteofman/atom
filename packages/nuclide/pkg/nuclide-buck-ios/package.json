@@ -1,0 +1,17 @@
+{
+  "name": "nuclide-buck-ios",
+  "description": "iOS support for buck toolbar",
+  "author": "NEEDS OWNER",
+  "main": "./lib/main.js",
+  "version": "0.0.0",
+  "nuclide": {
+    "packageType": "AtomPackage"
+  },
+  "consumedServices": {
+    "nuclide.buck-platforms": {
+      "versions": {
+        "0.0.0": "consumePlatformService"
+      }
+    }
+  }
+}

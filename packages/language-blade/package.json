@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/tmp/d-118312-3097-iujt31.ljoqn6ogvi/package.tgz",
+        "raw": "/tmp/d-118612-11897-t6q470.t02axrms4i/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/tmp/d-118312-3097-iujt31.ljoqn6ogvi/package.tgz",
-        "spec": "/tmp/d-118312-3097-iujt31.ljoqn6ogvi/package.tgz",
+        "rawSpec": "/tmp/d-118612-11897-t6q470.t02axrms4i/package.tgz",
+        "spec": "/tmp/d-118612-11897-t6q470.t02axrms4i/package.tgz",
         "type": "local"
       },
-      "/tmp/apm-install-dir-118312-3097-f56fr7.8gvkuik9"
+      "/tmp/apm-install-dir-118612-11897-1miiu3d.7zaqcnxw29"
     ]
   ],
-  "_from": "../d-118312-3097-iujt31.ljoqn6ogvi/package.tgz",
-  "_id": "language-blade@0.39.0",
+  "_from": "../d-118612-11897-t6q470.t02axrms4i/package.tgz",
+  "_id": "language-blade@0.40.0",
   "_inCache": true,
   "_location": "/language-blade",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/tmp/d-118312-3097-iujt31.ljoqn6ogvi/package.tgz",
+    "raw": "/tmp/d-118612-11897-t6q470.t02axrms4i/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/tmp/d-118312-3097-iujt31.ljoqn6ogvi/package.tgz",
-    "spec": "/tmp/d-118312-3097-iujt31.ljoqn6ogvi/package.tgz",
+    "rawSpec": "/tmp/d-118612-11897-t6q470.t02axrms4i/package.tgz",
+    "spec": "/tmp/d-118612-11897-t6q470.t02axrms4i/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-118312-3097-iujt31.ljoqn6ogvi/package.tgz",
-  "_shasum": "1941acae3d3f75ac5c0952510dd31fcf556251c5",
+  "_resolved": "file:../d-118612-11897-t6q470.t02axrms4i/package.tgz",
+  "_shasum": "98f579526dc57840c322ffc94dd7eb640dd4bf84",
   "_shrinkwrap": null,
-  "_spec": "/tmp/d-118312-3097-iujt31.ljoqn6ogvi/package.tgz",
-  "_where": "/tmp/apm-install-dir-118312-3097-f56fr7.8gvkuik9",
+  "_spec": "/tmp/d-118612-11897-t6q470.t02axrms4i/package.tgz",
+  "_where": "/tmp/apm-install-dir-118612-11897-1miiu3d.7zaqcnxw29",
   "bugs": {
     "url": "https://github.com/jawee/language-blade/issues"
   },
@@ -55,5 +55,5 @@
     "type": "git",
     "url": "git+https://github.com/jawee/language-blade.git"
   },
-  "version": "0.39.0"
+  "version": "0.40.0"
 }

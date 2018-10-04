@@ -1,0 +1,18 @@
+{
+  "name": "nuclide-recent-files-service",
+  "main": "./lib/main.js",
+  "version": "0.0.0",
+  "description": "Provides a list of recently opened file paths in reverse chronological order.",
+  "author": "NEEDS OWNER",
+  "nuclide": {
+    "packageType": "AtomPackage"
+  },
+  "activationCommands": {},
+  "providedServices": {
+    "nuclide-recent-files-service": {
+      "versions": {
+        "0.0.0": "provideRecentFilesService"
+      }
+    }
+  }
+}
